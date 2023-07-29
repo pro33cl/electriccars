@@ -258,8 +258,9 @@ ul{
 }
 
 .container-grid{
-    display: grid;
     height: auto;
+    width: auto;
+    display: grid;
     width: auto;
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -284,7 +285,7 @@ ul{
     "principal"
     "footer";
     gap: 0;
-    grid-template-rows: 3rem 5rem auto 4rem;
-    grid-template-columns: auto;
+    grid-template-rows: 5vh 10vh 75vh 10vh;
+    grid-template-columns: 1fr;
 }
 
