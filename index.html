@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Car Store</title>
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <!--Iconos de Font Awesome-->
+    <script src="https://kit.fontawesome.com/c90a8fcf3a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!--Layout-->
+    <main class="layout">
+        <!--Navbar-->
+        <nav class="nav">
+            <!--Navbar Logo-->
+            <div class="logo">
+                <img src="assets/imgs/icon-01.png" class="icon-01" alt="Icono">
+                <h1 class="">Electric Cars</h1>
+            </div>
+            <!--Navbar Menu-->
+            <ul class="nav-menu">
+                <li>Inicio</li>
+                <li>Catálogo</li>
+                <li>Ofertas</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+        <!--Form Filter-->
+        <section class="form-filter">
+            <p class="form-label">Ordenar Por:</p>
+            <select class="class" name="select">
+                <option value="Precio" selected>Precio</option>
+                <option value="Fecha">Fecha</option>
+            </select>
+        </section>
+        <!--Principal Section-->
+        <section class="principal">
+            <!--Principal Grid-->
+            <section class="container-grid">
+                <!--Card-->
+                <div class="card">
+                    <img src="assets/imgs/img-01.png" class="card-img" alt="Producto">
+                    <h3 class="card-text-model">Model: City Car</h3>
+                    <button class="card-button">Ver más</button>
+                </div>
+            </section>
+            <!--Principal Index-->
+            <section class="container-index">
+                <ul class="index-menu">
+                    <li><<</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>>></li>
+                </ul>
+            </section>
+        </section>
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-icons">
+                <i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
+            </div>
+            <p class="footer-text"></p>
+        </footer>
+    </main>  
+</body>
+</html>
