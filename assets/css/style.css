@@ -45,37 +45,246 @@ body {
 /* ------------------------------------------------------- */
 /*Estilos de Textos*/
 
-/* Texto del Logo */
-.logo-text{
-    color:white;
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: start;
-}
-
-/* Texto del Menu */
-.nav-menu li{
-    color:white;
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: center;
-}
-
-/* Texto label del Formulario*/
-.form-label{
+.txt-black-1-n-center{
     color:black;
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
 }
 
+.txt-white-1-n-start{
+    color:white;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: start;
+}
 
+.txt-white-1-n-center{
+    color:white;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
 
-
-/* Texto del Footer*/
-.footer-text{
+.txt-white-1-b-center{
     color:white;
     font-size: 1rem;
     font-weight: 500;
     text-align: center;
 }
+
+ul{
+    list-style: none;
+}
+
+.txt-index{
+    text-decoration: none;
+    color: #4d77fd;
+}
+
+/* ------------------------------------------------------- */
+/*Estilos Flex*/
+
+.f-row{
+    display:flex;
+    flex-direction: row;
+}
+
+.f-column{
+    display:flex;
+    flex-direction: column;
+}
+
+.f-start-star{
+    justify-content: start;
+    align-items: start;
+}
+
+.f-start-center{
+    justify-content: start;
+    align-items: center;
+}
+
+.f-between-center{
+    justify-content:space-between;
+    align-items: center;
+}
+
+.f-between-start{
+    justify-content:space-between;
+    align-items: start;
+}
+
+.f-center-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.f-center-start{
+    justify-content: center;
+    align-items: start;
+}
+
+.f-evenly-center{
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+/* ------------------------------------------------------- */
+/*Estilos Margin Padding*/
+
+.m-0-2{
+    margin: 0.2rem;
+}
+
+.m-0-3{
+    margin: 0.3rem;
+}
+
+.mside-0-3{
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+.m-0-5{
+    margin: 0.5rem;
+}
+
+.mb-0-5{
+    margin-bottom: 0.5rem;
+}
+
+.mt-0-5{
+    margin-top: 0.5rem;
+}
+
+.p-0-5{
+    padding: 0.5rem;
+}
+
+.p-1{
+    padding: 1rem;
+}
+
+/* ------------------------------------------------------- */
+/*Estilos Contenedores*/
+
+/* Estilos Navbar */
+
+.nav{
+    padding: 1rem 0.7rem 1rem 0.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu{
+    display: none;
+}
+
+.icon-bar{
+    visibility: visible;
+}
+
+/* Estilos Form Filter*/
+
+.form-filter{
+    padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+}
+
+.form-select{
+    height: 2rem;
+    width: 100%;
+    border-style: solid;
+    border-radius: 0.2rem;
+    border-color: darkgray;
+    border-width: 1px;
+}
+
+/* Estilos Card */
+.card{
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-color: darkgray;
+    border-width: 1px;
+}
+
+.card-img{
+    width: 20rem;
+}
+
+.card-button{
+    height: 2rem;
+    width: 5rem;
+    border-style: hidden;
+    border-radius: 0.3rem;
+}
+
+/* Estilos Index*/
+
+.index-num{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-style: solid;
+    border-color:lightgray;
+    border-width: 1px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-start{
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+}
+
+.index-end{
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+
+}
+
+/* ------------------------------------------------------- */
+/*Estilos Areas, Grid y Layouts*/
+
+.nav{
+    grid-area: nav;
+}
+
+.form-filter{
+    grid-area: form-filter;
+}
+
+.container-grid{
+    display: grid;
+    height: auto;
+    width: auto;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    overflow: auto;
+}
+
+.principal{
+    grid-area: principal;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.layout{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "form-filter"
+    "principal"
+    "footer";
+    gap: 0;
+    grid-template-rows: 3rem 5rem auto 4rem;
+    grid-template-columns: auto;
+}
+
