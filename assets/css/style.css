@@ -180,11 +180,14 @@ ul{
 }
 
 .nav-menu{
+    width: auto;
+    height: auto;
+    margin: 0;
     display: none;
 }
 
 .icon-bar{
-    visibility: visible;
+    display: block;
 }
 
 /* Estilos Form Filter*/
@@ -208,10 +211,16 @@ ul{
     border-radius: 0.5rem;
     border-color: darkgray;
     border-width: 1px;
+    box-shadow: 0 4px 5px -3px darkgray;
+}
+
+.card-header{
+    width: calc(100%-2rem);
 }
 
 .card-img{
-    width: 20rem;
+    width: 100%;
+    height: auto; 
 }
 
 .card-button{
@@ -243,7 +252,14 @@ ul{
 .index-end{
     border-top-right-radius: 0.3rem;
     border-bottom-right-radius: 0.3rem;
+}
 
+/* Estilos Footer*/
+
+.footer-icons{
+    width: 3rem;
+    height: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 /* ------------------------------------------------------- */
@@ -289,3 +305,114 @@ ul{
     grid-template-columns: 1fr;
 }
 
+/* ------------------------------------------------------------------------- */
+/* ESTILOS PARA PANTALLAS MAYORES A 576px Y MENORES A 992px, PANTALLAS TABLETS*/
+@media(min-width: 576px){
+
+    /* ------------------------------------------------------- */
+    /*Estilos Areas, Grid y Layouts*/
+
+    .layout{
+        grid-template-areas: 
+        "nav nav"
+        "form-filter principal"
+        "footer footer";
+        grid-template-rows: 5vh 87vh 8vh;
+        grid-template-columns: 25vw 75vw;
+    }
+
+    .container-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* ------------------------------------------------------- */
+    /*Estilos Contenedores*/
+
+    /* Estilos Navbar */
+
+    .nav-menu{
+        width: 50vw;
+        height: auto;
+        margin: 0;
+        display:block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav{
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .icon-bar{
+        display: none;
+    }
+
+    /* Estilos Card */
+ 
+    .card-header{
+        width: calc(50%-1.5rem);
+    }
+
+}
+
+/* ------------------------------------------------------------------------- */
+/* ESTILOS PARA PANTALLAS MAYORES A 992px, PANTALLAS ESCRITORIO*/
+@media(min-width: 992px){
+
+    /* ------------------------------------------------------- */
+    /*Estilos Areas, Grid y Layouts*/
+
+    .layout{
+        grid-template-areas: 
+        "nav form-filter"
+        "nav principal"
+        "footer principal";
+        grid-template-rows: 11vh 76vh 13vh;
+        grid-template-columns: 16vw 84vw;
+    }
+
+    .container-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    /* ------------------------------------------------------- */
+    /*Estilos Contenedores*/
+
+    /* Estilos Navbar */
+
+    .nav{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .nav-menu{
+        width: auto;
+        height: 20vh;
+        margin: 2rem 0 0 0;
+        display:block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .icon-bar{
+        display: none;
+    }
+
+    /* Estilos Card */
+ 
+    .card-header{
+        width: calc(25%-1.25rem);
+    }
+    
+}
